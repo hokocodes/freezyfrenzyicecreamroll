@@ -20,7 +20,7 @@ const Header: React.FC = () => {
             <div className="w-10 h-10 bg-gradient-to-r from-yellow-400 to-yellow-500 rounded-full flex items-center justify-center border-2 border-black">
               <span className="text-black font-bold text-lg">F</span>
             </div>
-            <span className="text-xl font-bold text-gray-800">Freezy Frenzy</span>
+            <span className="text-xl font-bold text-gray-800">Freezy Frenzy Ice Cream Roll</span>
           </div>
 
           <nav className="hidden md:flex space-x-8">
@@ -59,11 +59,11 @@ const Header: React.FC = () => {
           <div className="hidden md:flex items-center space-x-4">
             <div className="flex items-center space-x-1 text-gray-600 text-sm">
               <Phone className="w-4 h-4" />
-              <span>(555) 123-ROLL</span>
+              <span>(832) 230-3830</span>
             </div>
             <div className="flex items-center space-x-1 text-gray-600 text-sm">
               <MapPin className="w-4 h-4" />
-              <span>Downtown</span>
+              <span>Jersey Village, TX</span>
             </div>
           </div>
 
@@ -109,6 +109,16 @@ const Header: React.FC = () => {
                 Contact
               </button>
             </nav>
+            <div className="mt-4 pt-4 border-t border-gray-200">
+              <div className="flex items-center space-x-1 text-gray-600 text-sm mb-2">
+                <Phone className="w-4 h-4" />
+                <span>(832) 230-3830</span>
+              </div>
+              <div className="flex items-center space-x-1 text-gray-600 text-sm">
+                <MapPin className="w-4 h-4" />
+                <span>Jersey Village, TX</span>
+              </div>
+            </div>
           </div>
         )}
       </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Heart, Instagram, Facebook, Twitter, Mail } from 'lucide-react';
+import { Heart, Instagram, Facebook, Twitter, Mail, Phone, MapPin, Clock } from 'lucide-react';
 
 const Footer: React.FC = () => {
   const scrollToSection = (sectionId: string) => {
@@ -19,14 +19,15 @@ const Footer: React.FC = () => {
                 <span className="text-black font-bold text-xl">F</span>
               </div>
               <div>
-                <h3 className="text-2xl font-bold">Freezy Frenzy</h3>
-                <p className="text-gray-400 text-sm">Fresh Ice Cream Rolls</p>
+                <h3 className="text-2xl font-bold">Freezy Frenzy Ice Cream Roll</h3>
+                <p className="text-gray-400 text-sm">Fresh Thai Ice Cream Rolls</p>
               </div>
             </div>
             
             <p className="text-gray-300 mb-6 leading-relaxed">
-              Experience the art of fresh ice cream rolling. Every roll is crafted with premium ingredients 
-              and made to order, creating perfect moments of sweet delight for our community.
+              Experience the art of fresh Thai ice cream rolling. Every roll is crafted with premium ingredients 
+              and made to order, with both traditional and keto-friendly options available. Creating perfect moments 
+              of sweet delight for our Jersey Village community.
             </p>
             
             <div className="flex space-x-4">
@@ -39,7 +40,7 @@ const Footer: React.FC = () => {
               <a href="#" className="bg-gradient-to-r from-sky-400 to-sky-600 p-3 rounded-full hover:scale-110 transition-transform duration-300">
                 <Twitter className="w-5 h-5" />
               </a>
-              <a href="#" className="bg-gradient-to-r from-green-500 to-green-700 p-3 rounded-full hover:scale-110 transition-transform duration-300">
+              <a href="mailto:contact@freezyfrenzy.store" className="bg-gradient-to-r from-green-500 to-green-700 p-3 rounded-full hover:scale-110 transition-transform duration-300">
                 <Mail className="w-5 h-5" />
               </a>
             </div>
@@ -84,14 +85,28 @@ const Footer: React.FC = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Contact Info</h4>
             <div className="space-y-3 text-gray-300">
-              <p>123 Sweet Street<br />Downtown District<br />City, State 12345</p>
-              <p>(555) 123-ROLL</p>
-              <p>hello@freezyfrenzy.com</p>
+              <div className="flex items-start space-x-2">
+                <MapPin className="w-4 h-4 mt-1 flex-shrink-0" />
+                <p>17458 Northwest Fwy<br />Jersey Village, TX 77040</p>
+              </div>
+              <div className="flex items-center space-x-2">
+                <Phone className="w-4 h-4" />
+                <p>(832) 230-3830</p>
+              </div>
+              <div className="flex items-center space-x-2">
+                <Mail className="w-4 h-4" />
+                <p>contact@freezyfrenzy.store</p>
+              </div>
               <div className="text-sm">
-                <p className="font-medium text-white mb-1">Hours:</p>
-                <p>Mon-Thu: 12pm-10pm</p>
-                <p>Fri-Sat: 12pm-11pm</p>
-                <p>Sun: 1pm-9pm</p>
+                <div className="flex items-start space-x-2 mb-1">
+                  <Clock className="w-4 h-4 mt-1 flex-shrink-0" />
+                  <div>
+                    <p className="font-medium text-white mb-1">Hours:</p>
+                    <p>Mon-Thu: 1:00 PM - 9:30 PM</p>
+                    <p>Fri-Sat: 12:30 PM - 10:00 PM</p>
+                    <p>Sun: 12:30 PM - 9:30 PM</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -106,7 +121,7 @@ const Footer: React.FC = () => {
             </div>
             
             <div className="text-gray-300 text-sm">
-              © 2024 Freezy Frenzy. All rights reserved.
+              © 2024 Freezy Frenzy Ice Cream Roll. All rights reserved.
             </div>
           </div>
         </div>

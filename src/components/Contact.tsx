@@ -30,11 +30,11 @@ const Contact: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            Visit <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 to-pink-500">Freezy Frenzy</span>
+            Visit <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 to-pink-500">Freezy Frenzy Ice Cream Roll</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Come experience the magic of fresh ice cream rolls. We're located in the heart of downtown, 
-            ready to create your perfect sweet treat.
+            Come experience the magic of fresh ice cream rolls. We're located in Jersey Village, 
+            ready to create your perfect sweet treat with both traditional and keto-friendly options.
           </p>
         </div>
 
@@ -49,7 +49,7 @@ const Contact: React.FC = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-1">Location</h4>
-                  <p className="text-gray-600">123 Sweet Street<br />Downtown District<br />City, State 12345</p>
+                  <p className="text-gray-600">17458 Northwest Fwy<br />Jersey Village, TX 77040</p>
                 </div>
               </div>
 
@@ -59,8 +59,7 @@ const Contact: React.FC = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-1">Phone</h4>
-                  <p className="text-gray-600">(555) 123-ROLL</p>
-                  <p className="text-gray-600">(555) 123-7655</p>
+                  <p className="text-gray-600">(832) 230-3830</p>
                 </div>
               </div>
 
@@ -70,8 +69,7 @@ const Contact: React.FC = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-1">Email</h4>
-                  <p className="text-gray-600">hello@freezyfrenzy.com</p>
-                  <p className="text-gray-600">orders@freezyfrenzy.com</p>
+                  <p className="text-gray-600">contact@freezyfrenzy.store</p>
                 </div>
               </div>
 
@@ -82,15 +80,14 @@ const Contact: React.FC = () => {
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-1">Hours</h4>
                   <div className="text-gray-600 space-y-1">
-                    <p>Monday - Thursday: 12pm - 10pm</p>
-                    <p>Friday - Saturday: 12pm - 11pm</p>
-                    <p>Sunday: 1pm - 9pm</p>
+                    <p>Monday - Thursday: 1:00 PM - 9:30 PM</p>
+                    <p>Friday - Saturday: 12:30 PM - 10:00 PM</p>
+                    <p>Sunday: 12:30 PM - 9:30 PM</p>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div className="bg-gradient-to-r from-blue-50 to-purple-50 p-6 rounded-xl">
             <div className="bg-gradient-to-r from-yellow-50 to-pink-50 p-6 rounded-xl border border-yellow-200">
               <h4 className="font-semibold text-gray-900 mb-2">Special Note</h4>
               <p className="text-gray-600 mb-4">
@@ -121,7 +118,6 @@ const Contact: React.FC = () => {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-400 focus:border-transparent"
                     placeholder="Your name"
                   />
@@ -138,7 +134,6 @@ const Contact: React.FC = () => {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-400 focus:border-transparent"
                     placeholder="your.email@example.com"
                   />
@@ -154,9 +149,8 @@ const Contact: React.FC = () => {
                     name="phone"
                     value={formData.phone}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-400 focus:border-transparent"
-                    placeholder="(555) 123-4567"
+                    placeholder="(832) 230-3830"
                   />
                 </div>
 
@@ -171,7 +165,6 @@ const Contact: React.FC = () => {
                     onChange={handleChange}
                     required
                     rows={4}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none"
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-400 focus:border-transparent resize-none"
                     placeholder="Tell us about your inquiry, special requests, or feedback..."
                   ></textarea>
@@ -193,5 +186,3 @@ const Contact: React.FC = () => {
 };
 
 export default Contact;
-  )
-}
