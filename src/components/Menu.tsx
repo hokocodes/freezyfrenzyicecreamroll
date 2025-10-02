@@ -539,7 +539,11 @@ const Menu: React.FC = () => {
                 <div className="flex items-center justify-between">
                   <span className="text-2xl font-bold text-pink-500">{item.price}</span>
                   <button className="bg-gradient-to-r from-yellow-400 to-yellow-500 text-black px-6 py-2 rounded-full font-semibold hover:shadow-lg transition-all duration-300 transform hover:scale-105 border-2 border-black">
-                    Order Now
+                  <a
+  href="https://freezy-frenzy-thai-ice-cream.square.site"
+  target="_blank"
+  rel="noopener noreferrer"
+>Order Now</a>
                   </button>
                 </div>
               </div>
