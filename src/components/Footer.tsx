@@ -31,15 +31,15 @@ const Footer: React.FC = () => {
             </p>
             
             <div className="flex space-x-4">
-              <a href="#" className="bg-gradient-to-r from-pink-500 to-rose-500 p-3 rounded-full hover:scale-110 transition-transform duration-300">
+              <a href="https://www.instagram.com/freezyfrenzyicecreamroll/" className="bg-gradient-to-r from-pink-500 to-rose-500 p-3 rounded-full hover:scale-110 transition-transform duration-300">
                 <Instagram className="w-5 h-5" />
               </a>
-              <a href="#" className="bg-gradient-to-r from-blue-600 to-blue-800 p-3 rounded-full hover:scale-110 transition-transform duration-300">
+              <a href="https://www.facebook.com/freezyfrenzyicecreamroll/" className="bg-gradient-to-r from-blue-600 to-blue-800 p-3 rounded-full hover:scale-110 transition-transform duration-300">
                 <Facebook className="w-5 h-5" />
               </a>
-              <a href="#" className="bg-gradient-to-r from-sky-400 to-sky-600 p-3 rounded-full hover:scale-110 transition-transform duration-300">
+              {/* <a href="#" className="bg-gradient-to-r from-sky-400 to-sky-600 p-3 rounded-full hover:scale-110 transition-transform duration-300">
                 <Twitter className="w-5 h-5" />
-              </a>
+              </a> */}
               <a href="mailto:contact@freezyfrenzy.store" className="bg-gradient-to-r from-green-500 to-green-700 p-3 rounded-full hover:scale-110 transition-transform duration-300">
                 <Mail className="w-5 h-5" />
               </a>
