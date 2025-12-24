@@ -30,7 +30,7 @@ const Contact: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            Visit <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 to-pink-500">Freezy Frenzy Ice Cream Roll</span>
+            Visit <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 to-pink-500">Freezy Frenzy Thai Ice Cream Roll</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Come experience the magic of fresh ice cream rolls. We're located in Jersey Village, 

@@ -15,11 +15,15 @@ const Footer: React.FC = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-3 mb-6">
-              <div className="w-12 h-12 bg-gradient-to-r from-yellow-400 to-yellow-500 rounded-full flex items-center justify-center border-2 border-black">
-                <span className="text-black font-bold text-xl">F</span>
+              <div className="h-20 w-20 rounded-full border-4 border-black overflow-hidden flex items-center justify-center bg-white">
+                <img
+                  src="/images/logo.png"
+                  alt="Freezy Frenzy Thai Ice Cream Roll"
+                  className="h-full w-full object-contain"
+                />
               </div>
               <div>
-                <h3 className="text-2xl font-bold">Freezy Frenzy Ice Cream Roll</h3>
+                <h3 className="text-2xl font-bold">Freezy Frenzy Thai Ice Cream Roll</h3>
                 <p className="text-gray-400 text-sm">Fresh Thai Ice Cream Rolls</p>
               </div>
             </div>
@@ -121,7 +125,7 @@ const Footer: React.FC = () => {
             </div>
             
             <div className="text-gray-300 text-sm">
-              © 2024 Freezy Frenzy Ice Cream Roll. All rights reserved.
+              © 2024 Freezy Frenzy Thai Ice Cream Roll. All rights reserved.
             </div>
           </div>
         </div>

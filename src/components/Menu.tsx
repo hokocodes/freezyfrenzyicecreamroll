@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Heart, Clock, Thermometer, Leaf, Zap, Star } from 'lucide-react';
+import { Heart, Clock, Thermometer, Leaf, Zap, Star, Info } from 'lucide-react';
 
 interface MenuItem {
   id: number;
@@ -24,18 +24,18 @@ const Menu: React.FC = () => {
     "Berry Blast": "/images/rolls/berryblast.png",
     "Coffee Break": "/images/rolls/coffeebreak.png",
     "Cookie Monster": "/images/rolls/cookiemonster.png", // Most popular
-    "DIY": "/images/logo.jpg", // No image - using logo
-    "Emerald City": "/images/logo.jpg", // No image - using logo
+    "DIY": "/images/logo.png", // No image - using logo
+    "Emerald City": "/images/logo.png", // No image - using logo
     "Girl's Best Friend": "/images/rolls/girlsbestfriend.png",
     "Honey Boo Boo": "/images/rolls/honeybooboo.png",
-    "Mango Tango": "/images/logo.jpg", // No image - using logo
+    "Mango Tango": "/images/logo.png", // No image - using logo
     "Matcha Madness": "/images/rolls/matchamadness.png",
     "Matte Black": "/images/rolls/matteblack.png",
-    "Mean Green": "/images/logo.jpg", // No image - using logo
+    "Mean Green": "/images/logo.png", // No image - using logo
     "Ruby": "/images/logo.jpg", // No image - using logo
     "S'mores Galore": "/images/rolls/smoresgalore.png",
     "Thai Me Up": "/images/rolls/thaimeup.png",
-    "Tropical Passion": "/images/logo.jpg", // No image - using logo
+    "Tropical Passion": "/images/logo.png", // No image - using logo
   };
 
   // Fallback to logo if no specific image
@@ -472,6 +472,18 @@ const Menu: React.FC = () => {
           </div>
         </div>
 
+        <div className="bg-yellow-50 border-2 border-yellow-400 rounded-lg p-4 mb-8 max-w-4xl mx-auto">
+          <div className="flex items-start space-x-3">
+            <Info className="w-5 h-5 text-yellow-600 flex-shrink-0 mt-0.5" />
+            <div className="flex-1">
+              <p className="text-sm font-semibold text-yellow-900 mb-1">Important: Check Allulose Availability</p>
+              <p className="text-sm text-yellow-800">
+                Please verify that the allulose (sugar-free) version is available before ordering. Call us at <a href="tel:8322303830" className="font-semibold underline">(832) 230-3830</a> or check our <a href="https://www.instagram.com/freezyfrenzyicecreamroll/" target="_blank" rel="noopener noreferrer" className="font-semibold underline">Instagram</a> or <a href="https://www.facebook.com/freezyfrenzyicecreamroll/" target="_blank" rel="noopener noreferrer" className="font-semibold underline">Facebook</a> for current availability.
+              </p>
+            </div>
+          </div>
+        </div>
+
         <div className="flex flex-wrap justify-center gap-4 mb-12">
           {categories.map((category) => (
             <button
@@ -540,7 +552,7 @@ const Menu: React.FC = () => {
                   <span className="text-2xl font-bold text-pink-500">{item.price}</span>
                   <button className="bg-gradient-to-r from-yellow-400 to-yellow-500 text-black px-6 py-2 rounded-full font-semibold hover:shadow-lg transition-all duration-300 transform hover:scale-105 border-2 border-black">
                   <a
-  href="https://freezy-frenzy-thai-ice-cream.square.site"
+  href="https://order.ogentai.com/freezyfrenzyicetx/#menu"
   target="_blank"
   rel="noopener noreferrer"
 >Order Now</a>
@@ -553,9 +565,11 @@ const Menu: React.FC = () => {
 
         <div className="text-center mt-12">
           <p className="text-gray-600 mb-6">Can't find what you're looking for? Try our DIY option or create a custom smoothie!</p>
-          <button className="bg-white text-pink-500 border-2 border-pink-500 px-8 py-3 rounded-full font-semibold hover:bg-pink-500 hover:text-white transition-all duration-300">
-            Create Custom Order
-          </button>
+          <a href="https://order.ogentai.com/freezyfrenzyicetx/#menu" target="_blank" rel="noopener noreferrer">
+            <button className="bg-white text-pink-500 border-2 border-pink-500 px-8 py-3 rounded-full font-semibold hover:bg-pink-500 hover:text-white transition-all duration-300">
+              Create Custom Order
+            </button>
+          </a>
         </div>
 
         <div className="mt-12 bg-gradient-to-r from-yellow-50 to-pink-50 p-8 rounded-2xl border border-yellow-200">

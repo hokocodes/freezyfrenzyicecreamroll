@@ -36,7 +36,7 @@ const About: React.FC = () => {
             
             <div className="prose prose-lg text-gray-600 mb-8">
               <p className="mb-4">
-                At Freezy Frenzy Ice Cream Roll, we believe ice cream should be accessible to everyone. That's why we offer 
+                At Freezy Frenzy Thai Ice Cream Roll, we believe ice cream should be accessible to everyone. That's why we offer 
                 both traditional sweet ice cream rolls and innovative sugar-free, keto-friendly options. 
                 Our unique rolling technique transforms premium ingredients into beautiful, delicious works of art.
               </p>
@@ -99,7 +99,7 @@ const About: React.FC = () => {
         </div>
 
         <div className="mt-20">
-          <h3 className="text-2xl font-bold text-center text-gray-900 mb-12">Why Choose Freezy Frenzy Ice Cream Roll?</h3>
+          <h3 className="text-2xl font-bold text-center text-gray-900 mb-12">Why Choose Freezy Frenzy Thai Ice Cream Roll?</h3>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {features.map((feature, index) => (
