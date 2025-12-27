@@ -4,13 +4,13 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build && cp CNAME dist/CNAME",
-    "postbuild": "cp dist/index.html dist/404.html",
-    "lint": "eslint .",
-    "preview": "vite preview",
-    "predeploy": "npm run build && cp CNAME dist/CNAME",
-    "deploy": "gh-pages -d dist"
+    "scripts": {
+      "dev": "vite",
+      "build": "vite build",
+      "postbuild": "cp dist/index.html dist/404.html",
+      "lint": "eslint .",
+      "preview": "vite preview"
+    }
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.57.4",
