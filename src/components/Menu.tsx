@@ -32,19 +32,32 @@ const Menu: React.FC = () => {
     "Matcha Madness": "/images/rolls/matchamadness.png",
     "Matte Black": "/images/rolls/matteblack.png",
     "Mean Green": "/images/logo.png", // No image - using logo
-    "Ruby": "/images/logo.jpg", // No image - using logo
+    "Ruby": "/images/logo.png", // No image - using logo
     "S'mores Galore": "/images/rolls/smoresgalore.png",
     "Thai Me Up": "/images/rolls/thaimeup.png",
     "Tropical Passion": "/images/logo.png", // No image - using logo
   };
 
-  // Fallback to logo if no specific image
+  // Get image based on category
   const getImageForItem = (itemName: string, category: string): string => {
-    if (category === 'thai-ice-cream' && iceCreamImages[itemName]) {
-      return iceCreamImages[itemName];
+    // Thai Ice Cream Rolls - use specific images if available, otherwise logo.png
+    if (category === 'thai-ice-cream') {
+      return iceCreamImages[itemName] || "/images/logo.png";
     }
-    // Use logo as fallback for all other items
-    return "/images/logo.jpg";
+    // Smoothies - use smoothie.jpg
+    if (category === 'smoothies') {
+      return "/images/smoothie.jpg";
+    }
+    // Hot Beverages - use hotbev.jpg
+    if (category === 'hot-beverages') {
+      return "/images/hotbev.jpg";
+    }
+    // Milk Tea - use milktea.jpg
+    if (category === 'milk-tea') {
+      return "/images/milktea.jpg";
+    }
+    // All other categories (tea, ice-cream-scoop, etc.) - use logo.png
+    return "/images/logo.png";
   };
 
   const menuItems: MenuItem[] = [
@@ -431,6 +444,25 @@ const Menu: React.FC = () => {
       image: getImageForItem("Coffee", "ice-cream-scoop"),
       category: "ice-cream-scoop",
       prepTime: "1-2 min"
+    },
+    // Hot Beverages - using logo as fallback
+    {
+      id: 38,
+      name: "Hot Chocolate",
+      description: "Rich and creamy hot chocolate topped with marshmallows. Perfect for cold weather!",
+      price: "$5.45",
+      image: getImageForItem("Hot Chocolate", "hot-beverages"),
+      category: "hot-beverages",
+      prepTime: "2-3 min"
+    },
+    {
+      id: 39,
+      name: "Coffee",
+      description: "Warm, comforting coffee topped with marshmallows. Perfect for cold weather!",
+      price: "$5.45",
+      image: getImageForItem("Coffee", "hot-beverages"),
+      category: "hot-beverages",
+      prepTime: "2-3 min"
     }
   ];
 
@@ -439,7 +471,8 @@ const Menu: React.FC = () => {
     { id: 'smoothies', name: 'Smoothies', count: 7 },
     { id: 'tea', name: 'Tea', count: 6 },
     { id: 'milk-tea', name: 'Milk Tea', count: 6 },
-    { id: 'ice-cream-scoop', name: 'Ice Cream Scoop', count: 3 }
+    { id: 'ice-cream-scoop', name: 'Ice Cream Scoop', count: 3 },
+    { id: 'hot-beverages', name: 'Hot Beverages', count: 2 }
   ];
 
   const filteredItems = menuItems.filter(item => item.category === activeCategory);

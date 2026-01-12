@@ -6,7 +6,7 @@ const About: React.FC = () => {
     {
       icon: Leaf,
       title: "Sugar-Free Options",
-      description: "Keto-friendly rolls made with natural sweeteners like erythritol and stevia - zero added sugar, maximum taste"
+      description: "Keto-friendly rolls made with allulose - zero added sugar, maximum taste"
     },
     {
       icon: Heart,
@@ -46,6 +46,29 @@ const About: React.FC = () => {
                 we pour your chosen flavors onto our -18°C cold plate. Watch in amazement as we chop, mix, and 
                 spread your ingredients before expertly rolling them into perfect spirals right before your eyes.
               </p>
+
+              <div className="bg-gradient-to-r from-yellow-50 to-pink-50 p-6 rounded-xl border border-yellow-200 mb-4">
+                <h3 className="text-xl font-bold text-gray-900 mb-4">Our Ice Cream Base Ingredients</h3>
+                <div className="grid md:grid-cols-2 gap-4">
+                  <div className="bg-white p-4 rounded-lg border border-pink-200">
+                    <h4 className="font-bold text-pink-700 mb-2">Traditional Sweet Base</h4>
+                    <ul className="text-gray-700 text-sm space-y-1">
+                      <li>• Heavy whipping cream</li>
+                      <li>• Egg yolks</li>
+                      <li>• Sugar</li>
+                      <li>• Fructose</li>
+                    </ul>
+                  </div>
+                  <div className="bg-white p-4 rounded-lg border border-green-200">
+                    <h4 className="font-bold text-green-700 mb-2">Allulose Base (Sugar-Free)</h4>
+                    <ul className="text-gray-700 text-sm space-y-1">
+                      <li>• Heavy whipping cream</li>
+                      <li>• Egg yolks</li>
+                      <li>• Allulose</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
               
               <p>
                 Every roll tells a story, and every visit creates a memory. Whether you're following a strict 
@@ -128,6 +151,39 @@ const About: React.FC = () => {
               <span className="bg-pink-200 text-pink-800 px-4 py-2 rounded-full font-semibold">Traditional Sweet</span>
               <span className="bg-yellow-200 text-yellow-800 px-4 py-2 rounded-full font-semibold">Family-Friendly</span>
             </div>
+          </div>
+        </div>
+
+        <div className="mt-16 bg-gradient-to-r from-purple-50 to-pink-50 p-8 rounded-2xl border-2 border-purple-200">
+          <div className="text-center max-w-4xl mx-auto">
+            <h3 className="text-2xl font-bold text-gray-900 mb-4">✨ Special Features ✨</h3>
+            <div className="grid md:grid-cols-2 gap-6 text-left mb-6">
+              <div className="bg-white p-6 rounded-xl shadow-md">
+                <h4 className="text-xl font-bold text-purple-700 mb-3">📝 Wishing Wall</h4>
+                <p className="text-gray-700 mb-3">
+                  Visit our interactive Wishing Wall where customers can leave sticky notes and read messages from others. 
+                  Share your wishes, dreams, or simply spread positivity!
+                </p>
+              </div>
+              <div className="bg-white p-6 rounded-xl shadow-md">
+                <h4 className="text-xl font-bold text-orange-700 mb-3">🔥 Toasted Marshmallows</h4>
+                <p className="text-gray-700 mb-3">
+                  Yes, we toast the marshmallows! Our hot beverages come with perfectly toasted marshmallows 
+                  for that extra special touch of warmth and flavor.
+                </p>
+              </div>
+            </div>
+            <button
+              onClick={() => {
+                const element = document.getElementById('wishing-wall');
+                if (element) {
+                  element.scrollIntoView({ behavior: 'smooth' });
+                }
+              }}
+              className="bg-gradient-to-r from-purple-500 to-pink-500 text-white font-bold py-3 px-8 rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105 border-2 border-white"
+            >
+              Learn More About Wishing Wall & Marshmallow Toasting
+            </button>
           </div>
         </div>
       </div>

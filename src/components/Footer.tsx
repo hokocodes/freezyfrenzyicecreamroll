@@ -1,7 +1,11 @@
 import React from 'react';
-import { Heart, Instagram, Facebook, Twitter, Mail, Phone, MapPin, Clock } from 'lucide-react';
+import { Heart, Instagram, Facebook, Twitter, Mail, Phone, MapPin, Clock, Info } from 'lucide-react';
 
-const Footer: React.FC = () => {
+interface FooterProps {
+  onShowNutritionalFacts?: () => void;
+}
+
+const Footer: React.FC<FooterProps> = ({ onShowNutritionalFacts }) => {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -124,8 +128,19 @@ const Footer: React.FC = () => {
               <span>for ice cream lovers everywhere</span>
             </div>
             
-            <div className="text-gray-300 text-sm">
-              © 2024 Freezy Frenzy Thai Ice Cream Roll. All rights reserved.
+            <div className="flex flex-col items-center md:items-end space-y-2">
+              <div className="text-gray-300 text-sm">
+                © 2024 Freezy Frenzy Thai Ice Cream Roll. All rights reserved.
+              </div>
+              {onShowNutritionalFacts && (
+                <button
+                  onClick={onShowNutritionalFacts}
+                  className="flex items-center space-x-2 text-gray-400 hover:text-white transition-colors text-sm underline"
+                >
+                  <Info className="w-4 h-4" />
+                  <span>Nutritional Facts</span>
+                </button>
+              )}
             </div>
           </div>
         </div>
